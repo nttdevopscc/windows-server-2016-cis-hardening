@@ -1,0 +1,7 @@
+---
+- name: Windows Server 2016 CIS Hardening
+  hosts: windows_servers
+  ignore_errors: true
+  ignore_unreachable: true
+  roles:
+    - ansible-cis-hardening-windows
