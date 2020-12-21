@@ -4,4 +4,4 @@
   ignore_errors: true
   ignore_unreachable: true
   roles:
-    - ansible-cis-hardening-windows
+    - windows-cis-hardening
