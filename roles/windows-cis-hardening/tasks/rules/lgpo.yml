@@ -1,7 +1,7 @@
 - name: create security operations directories
   win_file:
     path: "{{item}}"
-  state: directory
+    state: directory
   with_items:
     - "C:\\SecOps"
 
