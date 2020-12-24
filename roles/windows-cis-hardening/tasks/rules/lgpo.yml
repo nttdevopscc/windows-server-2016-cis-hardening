@@ -7,7 +7,7 @@
 
 - name: create lgpo cli on host
   win_copy:
-    src: ~/Ansible/meta/LGPO.zip
+    src: ../../meta/LGPO.zip
     dest: "C:\\SecOps\\LGPO.zip"
 
 - name: unzip file
