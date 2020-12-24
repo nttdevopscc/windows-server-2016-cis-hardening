@@ -6,7 +6,7 @@
     - rules/localpolicies.yml
     - rules/windowsfirewall.yml
     - rules/advancedauditpolicyconfiguration.yml
-#    - rules/lgpo.yml
+    - rules/lgpo.yml
     - rules/administrativetemplatescomputer.yml
   loop_control:
     loop_var: windows_2016_uat_item
