@@ -1,4 +1,11 @@
 ---
+- name: Pause for 2 minutes to wait for the VM rebooted after VM provisioning
+  pause:
+    minutes: 2
+
+- name: Gather Facts
+  gather_facts:
+
 - name: Check for compliance of rules
   include_tasks: "{{ windows_2016_uat_item }}"
   loop:
@@ -6,7 +13,7 @@
     - rules/localpolicies.yml
     - rules/windowsfirewall.yml
     - rules/advancedauditpolicyconfiguration.yml
-    - rules/lgpo.yml
+#    - rules/lgpo.yml
     - rules/administrativetemplatescomputer.yml
   loop_control:
     loop_var: windows_2016_uat_item

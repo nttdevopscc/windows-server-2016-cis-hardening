@@ -1,6 +1,7 @@
 ---
-- name: Windows Server 2016 CIS Hardening
+- name: Windows Server CIS Hardening
   hosts: windows_servers
+  gather_facts: no
   ignore_errors: true
   ignore_unreachable: true
   roles:
