@@ -3,3 +3,8 @@ ansible_port: 5985
 ansible_connection: winrm
 ansible_winrm_transport: kerberos
 ansible_winrm_server_cert_validatation: ignore
+windows_domain: nttapdemo.com
+windows_domain_admin: "nttmyadmin"
+windows_domain_admin_password: "SDNlab123#@!"
+ansible_user: "nttmyadmin@NTTAPDEMO.COM"
+vault_ansible_password_windows: "SDNlab123#@!"
